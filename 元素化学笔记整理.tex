@@ -21,14 +21,23 @@
 \author{胡译文}
 \date{\today}
 
+\makeatletter
+\newcommand{\figcaption}{\def@captype{figure}\caption}
+\newcommand{\tabcaption}{\def@captype{table}\caption}
+\makeatother
+
 
 \begin{document}
 	\maketitle
 	\renewcommand\contentsname{目录}
 	\tableofcontents
 	\newpage
-	\section{Na}
-	\subsection{Na单质}
+	
+	
+	\section{\ce{Na}}
+	
+	\subsection{\ce{Na}单质}
+	
 	\subsubsection{物理性质}
 	\begin{itemize}
 		\item 银白色固体，有金属性光泽；
@@ -36,9 +45,9 @@
 		\item 熔点低；
 		\item 质地较软，可以用小刀切割。
 	\end{itemize}
+	
 	\subsubsection{化学性质}
-		\begin{itemize}
-			\item 与非金属单质反应
+		\paragraph{与非金属单质反应} 
 			\begin{itemize}
 				\item $\left\{\begin{array}{lr}
 						\ce{4Na + O2 -> 2Na2O}\\
@@ -47,11 +56,11 @@
 				\item $\ce{2Na + S -> Na2S}$
 				\item $\ce{2Na + H2 ->[\Delta] 2NaH}$
 				\item $\left\{\begin{array}{lr}
-						\ce{2Na + Cl2 ->[{点燃}] 2NaCl}\\
 						\ce{2Na + Br2 -> 2NaBr}\\
+						\ce{2Na + Cl2 ->[{点燃}] 2NaCl}\\
 					\end{array}\right.$
 			\end{itemize}
-			\item 与水反应：\\
+			\paragraph{与水反应}
 			$\ce{2Na + 2H2O -> 2NaOH + H2 ^}$
 			\begin{itemize}
 				\item 浮：钠的密度比水小
@@ -60,10 +69,12 @@
 				\item 响：反应剧烈
 				\item 红：生成\ce{NaOH}遇到酚酞变红
 			\end{itemize}
-			\item 与盐酸反应:\\
+			\paragraph{与盐酸反应}
 			$\ce{2Na + 2HCl -> 2NaCl + H2 ^}$
-			\item 与溶液反应：\\
-			钠不能与盐溶液发生置换反应，其反应的实质是先与水反应，产物再和盐反应.
+			\paragraph{与碱反应}
+			实质是先与水反应，产物再和盐反应。
+			\paragraph{与盐溶液反应}
+			实质是先与水反应，产物再和盐反应（钠不能与盐溶液发生置换反应）。
 			\begin{itemize}
 				\item 钠与硫酸铜溶液
 				$\left\{\begin{array}{lr}
@@ -71,21 +82,195 @@
 					\ce{2NaOH + CuSO4 -> Na2SO4 + Cu(OH)2 v}\\
 				\end{array}\right.$
 			\end{itemize}
-			\item 与\ce{CO2}反应：\\
+			\paragraph{与\ce{CO2}反应}
 			$\left\{\begin{array}{lr}
 				\ce{4Na + CO2 ->[\Delta] 2Na2O + C}\\
 				\ce{4Na + 3CO2 ->[\Delta] 2Na2CO3 + C}\\
 			\end{array}\right.$
-		\end{itemize}
+		
 	\subsubsection{钠的制取}
 	$\left\{\begin{array}{lr}
 		\ce{2NaCl(l) ->[{电解}] 2Na + Cl2 ^}\\
 		\ce{2NaOH(l) ->[{电解}] 2Na + O2 ^ + H2 ^}\\
 	\end{array}\right.$
+	
 	\subsubsection{钠的用途}
 	\begin{itemize}
 		\item 冶炼金属：$\ce{4Na + TiCl4(l) -> 4NaCl + Ti}$
 		\item 原子反应导热剂
 		\item 钠光灯
+	\end{itemize}
+	
+	
+	\subsection{\ce{Na}的化合物}
+	
+	\subsubsection{氧化钠和过氧化钠}
+	\paragraph{比较氧化钠和过氧化钠}
+	\renewcommand\arraystretch{2}
+	\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		名称&氧化钠&过氧化钠\\\hline
+		化学式&\ce{Na2O}&\ce{Na2O2}\\\hline
+		物理性质&白色固体&淡黄色固体\\\hline
+		氧化物类型&碱性氧化物&过氧化物\\\hline
+		制取&$\ce{4Na + O2 -> 2NaO}$&$\ce{2Na + O2 ->[\Delta] Na2O2}$\\\hline
+		与水反应&$\ce{Na2O + H2O -> 2NaOH}$&$\ce{2Na2O2 + 2H2O -> 4NaOH + O2 ^}$\\\hline
+		与酸反应&$\ce{Na2O + 2H+ -> 2Na+ + H2O}$&$\ce{2Na2O2 + 4H+ -> 4Na+ + 2H2O + O2 ^}$\\\hline
+		与\ce{CO2}反应&$\ce{Na2O + CO2 -> Na2CO3}$&$\ce{2Na2O2 + 2CO2 -> 2Na2CO3 + O2}$\\\hline
+		用途&制取烧碱&漂白剂、消毒剂、供氧剂\\\hline
+	\end{tabular}
+	\end{center}
+	\paragraph{过氧化钠的强氧化性}
+	\begin{itemize}
+		\item 与\ce{SO2}反应：$\ce{Na2O2 + SO2 -> Na2SO4}$
+		\item 投入\ce{FeCl2}溶液中生成\ce{Fe(OH)3}沉淀
+		\item 投入氢硫酸，氧化硫化氢成硫单质，溶液浑浊
+		\item 氧化\ce{SO3^2-}成\ce{SO4^2-}
+		\item 使品红溶液褪色
+	\end{itemize}
+	
+	\subsubsection{碳酸钠和碳酸氢钠}
+	\paragraph{碳酸钠\ce{Na2CO3}}
+	\begin{itemize}
+		\item 俗名：纯碱、苏打
+		\item 与盐酸反应：$\ce{Na2CO3 + 2HCl -> 2NaCl + H2O + CO2 ^}$
+		\item 与\ce{Ca(OH)2}溶液反应：$\ce{Na2CO3 + Ca(OH)2 -> CaCO3 v + 2NaOH}$
+		\item 与\ce{BaCl2}溶液反应：$\ce{Na2CO3 + BaCl2 -> BaCO3 v + 2NaCl}$
+	\end{itemize}
+	\paragraph{碳酸氢钠\ce{NaHCO3}}
+	\begin{itemize}
+		\item 俗名：小苏打
+		\item 与盐酸反应：$\ce{NaHCO3 + HCl -> NaCl + H2O + CO2 ^}$
+		\item 与过量\ce{Ca(OH)2}溶液反应：$\ce{Ca2+ + OH- + HCO3- -> CaCO3 v + H2O}$
+		\item 与少量\ce{Ca(OH)2}溶液反应：$\ce{Ca2+ + 2OH- + 2HCO3- + Ca(OH)2 -> CaCO3 v + 2H2O + CO3^2-}$
+		\item 与\ce{BaCl2}溶液反应：无明显现象
+		\item 受热分解：$\ce{2NaHCO3 ->[\Delta] Na2CO3 + H2O + CO2 ^}$
+	\end{itemize}
+	\paragraph{相互转换}
+	$\ce{Na2CO3 <=>[CO2 + H2O{或}H+][\Delta({固体}){或}OH-] NaHCO3}$
+	\paragraph{鉴别\ce{Na2CO3}和\ce{NaHCO3}}
+	\subparagraph{固体}
+	根据热稳定性加热，能产生使澄清石灰水变浑浊的气体的是\ce{NaHCO3}
+	\subparagraph{溶液}
+	\begin{itemize}
+		\item 与可溶性钙、钡盐生成沉淀的是\ce{Na2CO3}
+		\item 与足量盐酸反应剧烈的是\ce{NaHCO3}
+		\item 逐滴加盐酸先生成气体的是\ce{NaHCO3}
+		\item 等物质的量pH值较大的是\ce{Na2CO3}
+	\end{itemize}
+	
+	
+	\section{Mg和Al}
+	
+	\subsection{Mg单质和Al单质}
+	\subsubsection{化学性质}
+	\paragraph{与非金属单质反应}
+	\begin{itemize}
+		\item 与\ce{O2}反应：$\left\{\begin{array}{lr}
+					\ce{2Mg + O2 ->[{点燃}] 2MgO}(耀眼白光)\\
+					\ce{4Al + 3O2 ->[{点燃}] 2Al2O3}\\
+				\end{array}\right.$
+		\item 与\ce{CO2}反应：$\ce{2Mg + CO2 ->[{点燃}] 2MgO + C}(耀眼白光，黑色固体生成)$
+		\item 与\ce{N2}反应：$\ce{3Mg + N2 ->[{点燃}] Mg3N2}$
+		\item 与卤素反应：$\left\{\begin{array}{lr}
+					\ce{2Mg + Cl2 ->[{点燃}] 2MgCl2}\\
+					\ce{2Al + 3Cl2 ->[{点燃}] 2AlCl3}\\
+				\end{array}\right.$
+		\item 与硫反应：$\left\{\begin{array}{lr}
+					\ce{Mg + S ->[\Delta] MgS}\\
+					\ce{2Al + 3S ->[\Delta] Al2S3}\\
+				\end{array}\right.$
+	\end{itemize}
+	注意，镁在空气中燃烧时会同时发生前三个反应。
+	\paragraph{与热水反应}
+	$\left\{\begin{array}{lr}
+		\ce{Mg + H2O({沸水}) -> Mg(OH)2 + H2 ^}\\
+		\ce{2Al + 6H2O -> 2Al(OH)3 + 3H2 ^}\\
+	\end{array}\right.$
+	\paragraph{与酸发生置换反应}
+	特例：铝在冷的浓硫酸或浓硝酸中钝化。
+	\paragraph{铝热反应}
+	可以与\ce{FeO}、\ce{Fe2O3}、\ce{Fe3O4}、\ce{Cr2O3}、\ce{MnO2}、\ce{V2O5}等氧化物反应。\\
+	$\left\{\begin{array}{lr}
+		\ce{2Al + Fe2O3 ->[{高温}] Al2O3 + 2Fe}\\
+		\ce{2Al + Cr2O3 ->[{高温}] Al2O3 + 2Cr}\\
+	\end{array}\right.$
+	\\用途：焊接金属、冶炼难溶金属。
+	\paragraph{与碱反应}
+	镁不与碱反应。铝与强碱发生反应：$\ce{2Al + 2NaOH + 6H2 -> 2NaAlO2 + 4H2O + 3H2 ^}$
+	\subsubsection{制备}
+	\begin{itemize}
+		\item 工业制铝：$\ce{2Al2O3(l) ->[{冰晶石}][{通电}] 4Al + 3O2 ^}$
+		\item 工业制镁：$\left\{\begin{array}{lr}
+						\ce{Mg2+ + 2OH- -> Mg(OH)2 v}\\
+						\ce{Mg(OH)2 + 2HCl -> MgCl2 + H2O}\\
+						\ce{MgCl2(l) ->[{通电}] Mg + Cl2 ^}\\
+					\end{array}\right.$
+	\end{itemize}
+	
+	
+	\subsection{铝、氧化铝和氢氧化铝的两性}
+	\paragraph{与酸反应}
+	$\left\{\begin{array}{lr}
+		\ce{2Al + 6H+ -> 2Al3+ + 3H2 ^}({非氧化性酸})\\
+		\ce{Al2O3 + 6H+ -> 2Al3+ + 3H2O}\\
+		\ce{Al(OH)3 + 3H+ -> Al3+ + 3H2O}\\
+	\end{array}\right.$
+	\paragraph{与强碱反应}
+	$\left\{\begin{array}{lr}
+		\ce{2Al + 2OH- + 2H2O -> 2AlO2- + 3H2 ^}\\
+		\ce{Al2O3 + 2OH- -> 2AlO2- + H2O}\\
+		\ce{Al(OH)3 + OH- -> AlO2- + 2H2O}\\
+	\end{array}\right.$
+	\paragraph{\ce{Al(OH)3}的电离}
+	$\left\{\begin{array}{lr}
+		\ce{Al(OH)3 <=> H+ + AlO2- + H2O}\\
+		\ce{Al(OH)3 <=> Al3+ + OH-}\\
+	\end{array}\right.$
+	
+	\subsection{铝离子和偏铝酸根}
+	\subsubsection{铝离子}
+	\paragraph{与\ce{NaOH}的相互滴加}
+	缓慢滴加并搅拌
+	\subparagraph{将\ce{NaOH}滴入\ce{Al3+}溶液中}
+	\begin{enumerate}
+		\item 先出现白色沉淀：$\ce{Al3+ + 3OH- -> Al(OH)3 v}\\$
+		\item 后沉淀消失：$\ce{Al(OH)3 + OH- -> AlO2- + 2H2O}\\$
+	\end{enumerate}
+	\subparagraph{将\ce{Al3+}滴入\ce{NaOH}溶液中}
+	\begin{enumerate}
+		\item 先无明显现象：$\ce{Al3+ + 4OH- -> AlO2- + H2O}\\$
+		\item 后产生白色沉淀：$\ce{Al3+ + 3AlO2- + 6H2O -> 4Al3(OH)3 v}\\$
+	\end{enumerate}
+	\paragraph{与氨水反应}
+	$\ce{Al3+ + NH3*H2O -> Al(OH)3 v + 3NH4+}\\$
+	\subsubsection{偏铝酸根}
+	\paragraph{与强酸相互滴加}缓慢滴加并搅拌
+	\subparagraph{将\ce{H2SO4}滴入\ce{AlO2-}溶液中}
+	\begin{enumerate}
+		\item 先出现白色沉淀：$\ce{AlO2- + H+ + H2O -> Al(OH)3 v}\\$
+		\item 后沉淀消失：$\ce{Al(OH)3 + 3H+ -> Al3+ + 3H2O}\\$
+	\end{enumerate}
+	\subparagraph{将\ce{AlO2-}滴入\ce{H2SO4}溶液中}
+	\begin{enumerate}
+		\item 先无明显现象：$\ce{AlO2- + 4H+ -> Al3+ + 2H2O}\\$
+		\item 后产生白色沉淀：$\ce{Al3+ + 3AlO2- + 6H2O -> 4Al3(OH)3 v}\\$
+	\end{enumerate}
+	\paragraph{与碳酸反应}
+	立即生成\ce{Al(OH)3}沉淀且不溶解。
+	\begin{itemize}
+		\item \ce{CO2}过量：$\ce{AlO2- + 2H2O + CO2 -> Al(OH)3 v + HCO3-}\\$
+		\item \ce{CO2}少量：$\ce{2AlO2- + 3H2O + CO2 -> 2Al(OH)3 v + CO3^2-}\\$
+	\end{itemize}
+	\paragraph{与铵盐溶液反应}
+	$\ce{NH4+ + AlO2- + H2O -> Al(OH)3 v + NH3 ^}\\$
+	
+	\subsection{氢氧化铝}
+	\subsubsection{制备}
+	\begin{itemize}
+		\item $\ce{Al3+ + NH3*H2O -> Al(OH)3 v + 3NH4+}\\$
+		\item $\ce{AlO2- + 2H2O + CO2 -> Al(OH)3 v + HCO3-}\\$
+		\item $\ce{Al3+ + 3AlO2- + 6H2O -> 4Al3(OH)3 v}\\$
 	\end{itemize}
 \end{document}
