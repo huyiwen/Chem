@@ -1,0 +1,115 @@
+\documentclass[a4paper]{article}
+\usepackage{fontspec}
+\usepackage{fontenc}
+\usepackage{extarrows}
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+\usepackage{mwe}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{bigfoot}
+\usepackage{fancyvrb}
+\usepackage{tikz}
+\usepackage{expl3}
+\usepackage{calc}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2cm,bottom=3cm}
+\usetikzlibrary{graphs, positioning, quotes, shapes.geometric}
+\setmainfont{Hiragino Sans GB}
+
+\title{实验专题}
+\author{胡译文}
+\date{\today}
+
+\pagestyle{fancy}
+\fancyhead[L]{\footnotesize 化学笔记整理}
+\fancyhead[R]{\footnotesize 胡译文}
+\fancyfoot[C]{\thepage}
+
+\makeatletter
+\newcommand{\figcaption}{\def@captype{figure}\caption}
+\newcommand{\tabcaption}{\def@captype{table}\caption}
+\makeatother
+
+\usepackage{hyperref}
+\renewcommand\contentsname{目录}
+
+\begin{document}
+	\maketitle
+	\begin{center}
+		若有bug请到{\color{red}\href{https://github.com/huyiwen/Chem}{github}}上提Issue。
+	\end{center}
+	\renewcommand\contentsname{目录}
+	\tableofcontents
+	
+	\clearpage
+	\section{基本仪器}
+	\subsection{容器}
+	\subsection{量器}
+	\subsubsection{容量瓶}
+	\subsection{分离仪器}
+	\subsection{热源}
+	\subsection{其他}
+	\subsubsection{温度计}
+	\subsubsection{启普发生器}
+	\subsection{总结}
+	\subsubsection{需要验漏的仪器}
+	\subsubsection{需要标注规格的仪器}
+	
+	\clearpage
+	\section{药品}
+	\subsection{保存}
+	\subsection{危险标志}
+	
+	\clearpage
+	\section{基本操作}
+	\subsection{仪器的洗涤}
+	\subsection{试纸的使用}
+	\subsection{药品的取用}
+	\subsection{配制溶液}
+	\subsection{测定}
+	\subsubsection{酸碱中和或氧化还原滴定}
+	\subsubsection{中和反应反应热测定}
+	
+	\clearpage
+	\section{实验}
+	\subsection{Checklist}
+	\subsection{装置选取}
+	\subsection{实验现象}
+	\subsection{收集}
+	\subsection{性质探究与验证}
+	\subsection{尾气处理}
+	\subsection{事故处理}
+	
+	\clearpage
+	\section{物质的检验}
+	\subsection{离子检验}
+	\subsubsection{焰色反应}
+	\subsection{气体检验}
+	\subsection{官能团检验}
+	
+	\clearpage
+	\section{物质分离提纯}
+	\subsection{物理法}
+	\subsubsection{分液和萃取}
+	\subsubsection{分液和萃取}
+	\subsubsection{过滤}
+	\subsubsection{蒸发和结晶}
+	\subsubsection{蒸馏}
+	\subsubsection{升华}
+	\subsubsection{渗析}
+	\subsection{化学法}
+	\subsubsection{沉淀法}
+	\paragraph{\ce{Al2O3}和\ce{MgO}}
+	\begin{enumerate}
+		\item \ce{NaOH}溶液：氧化铝溶解，过滤得氧化镁
+		\item 稀\ce{HCl}：得氢氧化铝
+		\item 加热氢氧化铝：得氧化铝
+	\end{enumerate}
+	\subsubsection{氧化还原法}
+	\subsubsection{加热分解法}
+	
+\end{document}

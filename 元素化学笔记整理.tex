@@ -6,6 +6,7 @@
 \usepackage[version=4]{mhchem}
 \usepackage{mwe}
 \usepackage{amsmath}
+\usepackage{fancyhdr}
 \usepackage{color}
 \usepackage{amssymb}
 \usepackage{siunitx}
@@ -22,6 +23,11 @@
 \title{元素化学笔记整理}
 \author{胡译文}
 \date{\today}
+
+\pagestyle{fancy}
+\fancyhead[L]{\footnotesize 化学笔记整理}
+\fancyhead[R]{\footnotesize 胡译文}
+\fancyfoot[C]{\thepage}
 
 \makeatletter
 \newcommand{\figcaption}{\def@captype{figure}\caption}
@@ -40,7 +46,17 @@
 	\tableofcontents
 	
 	
-	\newpage
+	\clearpage
+	\section*{Flashback}
+	\subsection{金属活动顺序表}
+	\begin{itemize}
+		\item 钾钙钠镁铝：K Ca Na Mg Al
+		\item 锌铁锡铅氢：Zn Fe Sn Pb H
+		\item 铜汞银铂金：Cu Hg Ag Pt Au
+	\end{itemize}
+	
+	
+	\clearpage
 	\section{\ce{Na}}
 	\subsection{\ce{Na}单质}
 	\subsubsection{物理性质}
@@ -105,6 +121,16 @@
 		\item 原子反应导热剂
 		\item 钠光灯
 	\end{itemize}
+	\subsubsection{焰色反应}
+	\begin{itemize}
+		\item 锂盐：\textcolor[rgb]{0.698,0.149,0.098}{深红色}
+		\item 钠盐：\textcolor[rgb]{0.964,0.913,0.313}{黄色}
+		\item 钾盐：\textcolor[rgb]{0.882,0.741,0.858}{紫色}（透过蓝色钴玻璃）
+		\item 钙盐：\textcolor[rgb]{0.886,0.529,0.215}{砖红色}
+		\item 锶盐：\textcolor[rgb]{0.698,0.152,0.107}{洋红色}
+		\item 钡盐：\textcolor[rgb]{0.788,0.835,0.286}{黄绿色}
+		\item 铜盐：\textcolor[rgb]{0.537,0.8,0.262}{绿色}
+	\end{itemize}
 	
 	
 	\subsection{\ce{Na}的化合物}
@@ -119,8 +145,8 @@
 		化学式&\ce{Na2O}&\ce{Na2O2}\\\hline
 		物理性质&白色固体&\textcolor[rgb]{0.968,0.898,0.686}{淡黄色}固体\\\hline
 		氧化物类型&碱性氧化物&过氧化物\\\hline
-		制取&$\ce{4Na + O2 -> 2Na2O}$&$\ce{2Na + O2 ->[\Delta] Na2O2}$\\\hline
-		与水反应&$\ce{Na2O + H2O -> 2NaOH}$&$\ce{2Na2O2 + 2H2O -> 4NaOH + O2 ^}$\\\hline
+		获取&$\ce{4Na + O2 -> 2Na2O}$&$\ce{2Na + O2 ->[\Delta] Na2O2}$\\\hline
+		与水反应&$\ce{Na2O + H2O -> 2\underset{\text{白色粘稠物}}{\ce{NaOH}}}$&$\ce{2Na2O2 + 2H2O -> 4\underset{\text{白色粘稠物}}{\ce{NaOH}} + O2 ^}$\\\hline
 		与酸反应&$\ce{Na2O + 2H+ -> 2Na+ + H2O}$&$\ce{2Na2O2 + 4H+ -> 4Na+ + 2H2O + O2 ^}$\\\hline
 		与\ce{CO2}反应&$\ce{Na2O + CO2 -> Na2CO3}$&$\ce{2Na2O2 + 2CO2 -> 2Na2CO3 + O2}$\\\hline
 		用途&制取烧碱&漂白剂、消毒剂、供氧剂\\\hline
@@ -166,7 +192,7 @@
 	\end{itemize}
 	
 	
-	\newpage
+	\clearpage
 	\section{Mg和Al}
 	\subsection{Mg单质和Al单质}
 	\subsubsection{化学性质}
@@ -203,7 +229,7 @@
 	\end{array}\right.$
 	\\用途：焊接金属、冶炼难溶金属。
 	\paragraph{与碱反应}
-	镁不与碱反应。铝与强碱发生反应：$\ce{2Al + 2NaOH + 6H2 -> 2NaAlO2 + 4H2O + 3H2 ^}$
+	镁不与碱反应。铝与强碱发生反应：$\ce{2Al + 2NaOH + 6H2O -> 2NaAlO2 + 4H2O + 3H2 ^}$
 	\subsubsection{制备}
 	\paragraph{工业制铝}
 	$\ce{2Al2O3(l) ->[{冰晶石}][{通电}] 4Al + 3O2 ^}$
@@ -237,9 +263,9 @@
 	\subsection{铝、氧化铝和氢氧化铝的两性}
 	\paragraph{与酸反应}
 	$\left\{\begin{array}{lr}
-		\ce{2Al + 6H+ -> 2Al3+ + 3H2 ^}({非氧化性酸})\\
-		\ce{Al2O3 + 6H+ -> 2Al3+ + 3H2O}\\
-		\ce{Al(OH)3 + 3H+ -> Al3+ + 3H2O}\\
+		\ce{2Al + 6H+ -> 2Al^3+ + 3H2 ^}({非氧化性酸})\\
+		\ce{Al2O3 + 6H+ -> 2Al^3+ + 3H2O}\\
+		\ce{Al(OH)3 + 3H+ -> Al^3+ + 3H2O}\\
 	\end{array}\right.$
 	\paragraph{与强碱反应}
 	$\left\{\begin{array}{lr}
@@ -250,33 +276,33 @@
 	\paragraph{\ce{Al(OH)3}的电离}
 	$\left\{\begin{array}{lr}
 		\ce{Al(OH)3 <=> H+ + AlO2- + H2O}\\
-		\ce{Al(OH)3 <=> Al3+ + OH-}\\
+		\ce{Al(OH)3 <=> Al^3+ + OH-}\\
 	\end{array}\right.$
 	
 	\subsection{铝离子和偏铝酸根}
 	\subsubsection{铝离子}
 	\paragraph{与\ce{NaOH}的相互滴加}
 	缓慢滴加并搅拌
-	\subparagraph{将\ce{NaOH}滴入\ce{Al3+}溶液中}
+	\subparagraph{将\ce{NaOH}滴入\ce{Al^3+}溶液中}
 	\begin{enumerate}
-		\item 先出现白色沉淀：$\ce{Al3+ + 3OH- -> Al(OH)3 v}\\$
+		\item 先出现白色沉淀：$\ce{Al^3+ + 3OH- -> Al(OH)3 v}\\$
 		\item 后沉淀消失：$\ce{Al(OH)3 + OH- -> AlO2- + 2H2O}\\$
 	\end{enumerate}
-	\subparagraph{将\ce{Al3+}滴入\ce{NaOH}溶液中}
+	\subparagraph{将\ce{Al^3+}滴入\ce{NaOH}溶液中}
 	\begin{enumerate}
-		\item 先无明显现象：$\ce{Al3+ + 4OH- -> AlO2- + H2O}\\$
-		\item 后产生白色沉淀：$\ce{Al3+ + 3AlO2- + 6H2O -> 4Al3(OH)3 v}\\$
+		\item 先无明显现象：$\ce{Al^3+ + 4OH- -> AlO2- + H2O}\\$
+		\item 后产生白色沉淀：$\ce{Al^3+ + 3AlO2- + 6H2O -> 4Al3(OH)3 v}\\$
 	\end{enumerate}
 	\paragraph{与氨水反应}
-	$\ce{Al3+ + NH3*H2O -> Al(OH)3 v + 3NH4+}\\$
+	$\ce{Al^3+ + NH3*H2O -> Al(OH)3 v + 3NH4+}\\$
 	\paragraph{双水解反应}
 	\begin{itemize}
-		\item $\ce{Al3+ + 3HCO3- -> Al(OH)3 v + 3CO2 ^}$
-		\item $\ce{Al3+ + 3CO3^2- + 3H2O -> Al(OH)3 v + 3HCO3-}$
-		\item $\ce{Al3+ + 3AlO2- + 6H2O -> 4Al(OH)3 v}$
-		\item $\ce{2Al3+ + 3S^2- + 6H2O -> 2Al(OH)3 v + 3H2S ^}$
+		\item $\ce{Al^3+ + 3HCO3- -> Al(OH)3 v + 3CO2 ^}$
+		\item $\ce{Al^3+ + 3CO3^2- + 3H2O -> Al(OH)3 v + 3HCO3-}$
+		\item $\ce{Al^3+ + 3AlO2- + 6H2O -> 4Al(OH)3 v}$
+		\item $\ce{2Al^3+ + 3S^2- + 6H2O -> 2Al(OH)3 v + 3H2S ^}$
 		\item $\ce{AlO2- + NH4+ + H2O -> 4Al(OH)3 v + NH3 ^}$
-		\item $\ce{2Al3+ + 3SiO3^2- + 6H2O -> 2Al(OH)3 v + 3H2SiO3 v}$
+		\item $\ce{2Al^3+ + 3SiO3^2- + 6H2O -> 2Al(OH)3 v + 3H2SiO3 v}$
 	\end{itemize}
 	
 
@@ -285,12 +311,12 @@
 	\subparagraph{将\ce{H2SO4}滴入\ce{AlO2-}溶液中}
 	\begin{enumerate}
 		\item 先出现白色沉淀：$\ce{AlO2- + H+ + H2O -> Al(OH)3 v}\\$
-		\item 后沉淀消失：$\ce{Al(OH)3 + 3H+ -> Al3+ + 3H2O}\\$
+		\item 后沉淀消失：$\ce{Al(OH)3 + 3H+ -> Al^3+ + 3H2O}\\$
 	\end{enumerate}
 	\subparagraph{将\ce{AlO2-}滴入\ce{H2SO4}溶液中}
 	\begin{enumerate}
-		\item 先无明显现象：$\ce{AlO2- + 4H+ -> Al3+ + 2H2O}\\$
-		\item 后产生白色沉淀：$\ce{Al3+ + 3AlO2- + 6H2O -> 4Al3(OH)3 v}\\$
+		\item 先无明显现象：$\ce{AlO2- + 4H+ -> Al^3+ + 2H2O}\\$
+		\item 后产生白色沉淀：$\ce{Al^3+ + 3AlO2- + 6H2O -> 4Al3(OH)3 v}\\$
 	\end{enumerate}
 	\paragraph{与碳酸反应}
 	立即生成\ce{Al(OH)3}沉淀且不溶解。
@@ -302,11 +328,15 @@
 	$\ce{NH4+ + AlO2- + H2O -> Al(OH)3 v + NH3 ^}\\$
 	
 	\subsection{氢氧化铝}
+	\subsubsection{物理性质}
+	\begin{itemize}
+		\item 白色胶状沉淀
+	\end{itemize}
 	\subsubsection{制备}
 	\begin{itemize}
-		\item $\ce{Al3+ + NH3*H2O -> Al(OH)3 v + 3NH4+}\\$
+		\item $\ce{Al^3+ + NH3*H2O -> Al(OH)3 v + 3NH4+}\\$
 		\item $\ce{AlO2- + 2H2O + CO2 -> Al(OH)3 v + HCO3-}\\$
-		\item $\ce{Al3+ + 3AlO2- + 6H2O -> 4Al3(OH)3 v}\\$
+		\item $\ce{Al^3+ + 3AlO2- + 6H2O -> 4Al3(OH)3 v}\\$
 	\end{itemize}
 	
 	\subsection{总结}
@@ -321,14 +351,14 @@
 		\draw[-Latex] (AlO2-) [bend right] (AlOH) edge node {\ce{OH-}} (AlO2-);
 		\draw[-Latex] (Al3+) [bend right] (AlOH) edge node {\ce{H+}} (Al3+);
 		\draw[-Latex] (AlOH) [bend right] (Al3+) edge node {\ce{OH-}} (AlOH);
-		\draw[-Latex] (Al2O3) [bend right] (Al3+) edge node {\ce{H+}} (Al2O3);
+		\draw[-Latex] (Al3+) [bend left] (Al2O3) edge node {\ce{H+}} (Al3+);
 		\draw[-Latex] (AlO2-) [bend right] (Al2O3) edge node {\ce{OH-}} (AlO2-);
-		\draw[-Latex] (Al) [bend left] (Al3+) edge node {\ce{H+}} (Al);
+		\draw[-Latex] (Al3+) [bend right] (Al) edge node {\ce{H+}} (Al3+);
 		\draw[-Latex] (AlO2-) [bend left] (Al) edge node {\ce{OH-}} (AlO2-);
 	\end{tikzpicture}
 	
 	
-	\newpage
+	\clearpage
 	\section{Fe}
 	\subsection{铁单质}
 	\subsubsection{物理性质}
@@ -414,7 +444,7 @@
 	含有\ce{Fe^3+}的溶液呈\textcolor[rgb]{0.835,0.611,0.247}{棕黄色}， \ce{Fe^3+}具有氧化性。含有\ce{Fe^3+}的盐溶液遇到\ce{KSCN}溶液时变成红色。
 	
 	
-	\newpage
+	\clearpage
 	\section{Si}
 	\subsection{硅单质}
 	\subsubsection{物理性质}
@@ -546,7 +576,7 @@
 	\end{itemize}
 	
 	
-	\newpage
+	\clearpage
 	\section{Cl}
 	\paragraph{氯相关}
 	\subparagraph{含氯酸}
@@ -729,7 +759,7 @@
 	
 	
 	
-	\newpage
+	\clearpage
 	\section{S}
 	
 	\subsection{硫化氢}
@@ -1018,7 +1048,7 @@
 	\end{itemize}
 	
 	
-	\newpage
+	\clearpage
 	\section{N}
 	\subsection{氨气}
 	\subsubsection{物理性质}
