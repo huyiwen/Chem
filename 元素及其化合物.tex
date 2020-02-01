@@ -12,35 +12,29 @@
 \usepackage{siunitx}
 \usepackage{bigfoot}
 \usepackage{fancyvrb}
-\usepackage{tikz}
+\usepackage{hyperref}
 \usepackage{expl3}
 \usepackage{calc}
 \usepackage{geometry}
 \geometry{left=2.5cm,right=2.5cm,top=2cm,bottom=3cm}
-\usetikzlibrary{graphs, positioning, quotes, shapes.geometric}
 \setmainfont{Hiragino Sans GB}
 
-\title{元素化学笔记整理}
+\title{元素及其化合物}
 \author{胡译文}
 \date{\today}
 
-\pagestyle{fancy}
-\fancyhead[L]{\footnotesize 化学笔记整理}
-\fancyhead[R]{\footnotesize 胡译文}
-\fancyfoot[C]{\thepage}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+% XeLaTex的愚蠢中文自动换行
+% 讲真编译1分钟要死了
 
-\makeatletter
-\newcommand{\figcaption}{\def@captype{figure}\caption}
-\newcommand{\tabcaption}{\def@captype{table}\caption}
-\makeatother
-
-\usepackage{hyperref}
 \renewcommand\contentsname{目录}
 
 \begin{document}
 	\maketitle
 	\begin{center}
-		若有bug请到{\color{red}\href{https://github.com/huyiwen/Chem}{github}}上提Issue。
+		若有bug请到{\color{red}\href{https://github.com/huyiwen/Chem}{github}}上提Issue。\\
+		技术有限所有方程式的等号都用箭头代替了。
 	\end{center}
 	\renewcommand\contentsname{目录}
 	\tableofcontents
@@ -54,7 +48,13 @@
 		\item 锌铁锡铅氢：Zn Fe Sn Pb H
 		\item 铜汞银铂金：Cu Hg Ag Pt Au
 	\end{itemize}
-	
+	\subsection{氧化性顺序}
+	氧化性：\ce{F2} > \ce{O2} > \ce{Cl2} > \ce{Br2} > \ce{Fe^3+} > \ce{I2} > \ce{S}
+	\subsection{元素氧化图解}
+	\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{res/Redox.pdf}
+	\end{figure}
 	
 	\clearpage
 	\section{\ce{Na}}
@@ -83,13 +83,13 @@
 			\end{itemize}
 			\paragraph{与水反应}
 			$\ce{2Na + 2H2O -> 2NaOH + H2 ^}$
-			\begin{itemize}
-				\item 浮：钠的密度比水小
-				\item 溶：反应放热，钠的熔点低
-				\item 游：生成氢气推动钠
-				\item 响：反应剧烈
-				\item 红：生成\ce{NaOH}遇到酚酞变红
-			\end{itemize}
+			\begin{description}
+				\item{浮} 钠的密度比水小
+				\item{溶} 反应放热，钠的熔点低
+				\item{游} 生成氢气推动钠
+				\item{响} 反应剧烈
+				\item{红} 生成\ce{NaOH}遇到酚酞变红
+			\end{description}
 			\paragraph{与盐酸反应}
 			$\ce{2Na + 2HCl -> 2NaCl + H2 ^}$
 			\paragraph{与碱反应}
@@ -108,7 +108,7 @@
 				\ce{4Na + CO2 ->[\Delta] 2Na2O + C}\\
 				\ce{4Na + 3CO2 ->[\Delta] 2Na2CO3 + C}\\
 			\end{array}\right.$
-		
+
 	\subsubsection{钠的制取}
 	$\left\{\begin{array}{lr}
 		\ce{2NaCl(l) ->[{电解}] 2Na + Cl2 ^}\\
@@ -122,16 +122,7 @@
 		\item 钠光灯
 	\end{itemize}
 	\subsubsection{焰色反应}
-	\begin{itemize}
-		\item 锂盐：\textcolor[rgb]{0.698,0.149,0.098}{深红色}
-		\item 钠盐：\textcolor[rgb]{0.964,0.913,0.313}{黄色}
-		\item 钾盐：\textcolor[rgb]{0.882,0.741,0.858}{紫色}（透过蓝色钴玻璃）
-		\item 钙盐：\textcolor[rgb]{0.886,0.529,0.215}{砖红色}
-		\item 锶盐：\textcolor[rgb]{0.698,0.152,0.107}{洋红色}
-		\item 钡盐：\textcolor[rgb]{0.788,0.835,0.286}{黄绿色}
-		\item 铜盐：\textcolor[rgb]{0.537,0.8,0.262}{绿色}
-	\end{itemize}
-	
+	钠盐：\textcolor[rgb]{0.964,0.913,0.313}{黄色}火焰（更多请移步化学实验部分）
 	
 	\subsection{\ce{Na}的化合物}
 	
@@ -244,22 +235,7 @@
 	\ce{\underset{\text{贝壳}}{CaCO3} -> CaO -> Ca(OH)2 -> Mg(OH)2 -> MgCl2 ->[{通电}] Mg}
 	$$
 	其中氯元素可以循环：$\ce{Cl2 -> HCl -> MgCl2 -> Cl2}$
-	\paragraph{海水提溴}
-	海水元素：溴
-	$$
-	\ce{{海水} ->[{晒盐}] {盐卤} ->[{通入}Cl2] Br2(aq) ->[{吹热空气或水蒸气}] Br2(g) ->[{热饱和纯碱}] {溴酸盐和溴盐溶液} ->[{稀硫酸酸化}] {Br2}}
-	$$
-	$\left\{\begin{array}{lr}
-		\ce{Cl2 + 2Br- -> Br2 + 2Cl-}\\
-		\ce{3Br2 + 3CO3^2- -> 5Br- + BrO3- + 3CO2}\\
-		\ce{5Br- + BrO3- + 6H+ -> 3Br2 + 3H2O}\\
-	\end{array}\right.$
-	\paragraph{海带提碘}
-	$$
-	\ce{{海带} -> {烧碱灰} ->[{泡水浸取}] ->[Cl2] I2}
-	$$
-	
-	
+
 	\subsection{铝、氧化铝和氢氧化铝的两性}
 	\paragraph{与酸反应}
 	$\left\{\begin{array}{lr}
@@ -340,22 +316,10 @@
 	\end{itemize}
 	
 	\subsection{总结}
-	\begin{tikzpicture}[node distance=40pt, auto, thick]
-		\node[draw] (Al2O3) {\ce{Al2O3}};
-		\node[draw, below=of Al2O3] (AlOH) {\ce{Al(OH)3}};
-		\node[draw, below=of AlOH] (Al) {\ce{Al}};
-		\node[draw, right=60pt of AlOH] (Al3+) {\ce{Al^3+}};
-		\node[draw, left=60pt of AlOH] (AlO2-) {\ce{AlO2-}};
-		
-		\draw[-Latex] (AlOH) [bend right] (AlO2-) edge node {\ce{H+}} (AlOH);
-		\draw[-Latex] (AlO2-) [bend right] (AlOH) edge node {\ce{OH-}} (AlO2-);
-		\draw[-Latex] (Al3+) [bend right] (AlOH) edge node {\ce{H+}} (Al3+);
-		\draw[-Latex] (AlOH) [bend right] (Al3+) edge node {\ce{OH-}} (AlOH);
-		\draw[-Latex] (Al3+) [bend left] (Al2O3) edge node {\ce{H+}} (Al3+);
-		\draw[-Latex] (AlO2-) [bend right] (Al2O3) edge node {\ce{OH-}} (AlO2-);
-		\draw[-Latex] (Al3+) [bend right] (Al) edge node {\ce{H+}} (Al3+);
-		\draw[-Latex] (AlO2-) [bend left] (Al) edge node {\ce{OH-}} (AlO2-);
-	\end{tikzpicture}
+	\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{res/Al.pdf}
+	\end{figure}
 	
 	
 	\clearpage
@@ -422,22 +386,14 @@
 	\end{center}
 	\subsubsection{\ce{Fe(OH)2}和\ce{Fe(OH)3}的转化}
 	\ce{Fe(OH)2}在空气中可以迅速被氧化成\ce{Fe(OH)3}。现象是由\textbf{白色絮状沉淀}迅速变成\textcolor[rgb]{0.231,0.301,0.219}{灰绿色}，最后变成\textcolor[rgb]{0.541,0.149,0.078}{红褐色}。
-	反应方程式：\ce{4Fe(OH)2 + O2 + 2H2O -> 4Fe(OH)3}。
+	$$\ce{4Fe(OH)2 + O2 + 2H2O -> 4Fe(OH)3}。$$
 	
 	\subsection{铁三角（铁、亚铁盐、铁盐）}
-	\begin{tikzpicture}[node distance=40pt, auto, thick]
-		\node[draw] (Fe) {\ce{Fe}};
-		\node[below=104pt of Fe] (TEMP) {};
-		\node[draw, right=60pt of TEMP] (Fe3+) {\ce{Fe^3+}};
-		\node[draw, left=60pt of TEMP] (Fe2+) {\ce{Fe^2+}};
-		
-		\draw[-Latex] (Fe) (Fe3+) edge node {\ce{Cl2}} (Fe);
-		\draw[-Latex] (Fe3+) [bend left] (Fe) edge node {\ce{Zn}} (Fe3+);
-		\draw[-Latex] (Fe3+) (Fe2+) edge node {\ce{Fe}或\ce{Cu}} (Fe3+);
-		\draw[-Latex] (Fe2+) [bend left] (Fe3+) edge node {\ce{HNO3}或\ce{Cl2}} (Fe2+);
-		\draw[-Latex] (Fe2+) (Fe) edge node {\ce{Zn}} (Fe2+);
-		\draw[-Latex] (Fe) [bend left] (Fe2+) edge node {\ce{Fe^3+}或\ce{H+}} (Fe);
-	\end{tikzpicture}
+	\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{res/Fe.pdf}
+	\end{figure}
+	
 	\paragraph{亚铁盐}
 	含有\ce{Fe^2+}的溶液呈\textcolor[rgb]{0.625,0.8,0.7}{浅绿色}，\ce{Fe^2+}既有氧化性，又有还原性。
 	\paragraph{铁盐}
@@ -449,7 +405,7 @@
 	\subsection{硅单质}
 	\subsubsection{物理性质}
 	\begin{itemize}
-		\item 分类：无定形硅、晶体硅（结构类似金刚石）
+		\item 分类：无定形硅、晶体硅（结构类似金刚石，原子晶体）
 		\item 灰黑色晶状固体
 		\item 质地较脆
 		\item 半导体
@@ -464,8 +420,14 @@
 		\end{itemize}
 	\paragraph{与水反应}
 	$\underbrace{\ce{Si + H2O + 2NaOH -> Na2SiO3 + 2H2 ^}}_{\text{野外制氢}}$
+	\paragraph{精炼}
+	\begin{enumerate}
+		\item $\ce{Si + Cl2 ->[\Delta] SiCl4}$
+		\item $\ce{SiCl4 + 2H2 ->[{高温}] 4HCl + Si}$
+	\end{enumerate}
 		
 	\subsection{硅的氧化物}
+	最简式：\ce{SiO2}（分子晶体）
 	\subsubsection{物理性质}
 	\begin{itemize}
 		\item 透明、硬度大、熔点高
@@ -475,7 +437,8 @@
 	\subparagraph{与强碱反应}
 	$\underbrace{\ce{SiO2 + 2NaOH -> Na2SiO3 + H2O}}_{\text{装NaOH溶液不用玻璃塞}}$
 	\subparagraph{与唯一一种酸氢氟酸反应}
-	$\underbrace{\ce{SiO2 + 4Hf -> SiF2 ^ + 2 H2O}}_{\text{腐蚀玻璃、玻璃雕花}}$
+	$\underbrace{\ce{SiO2 + 4HF -> SiF4 ^ + 2 H2O}}_{\text{腐蚀玻璃、玻璃雕花}}$
+	（气标！气标！！）
 	\subparagraph{与碱性氧化物反应}
 	氧化硅与碱性氧化物反应，不与水反应（与水反应产物为硅酸，是沉淀，阻止反应进行）
 	\begin{itemize}
@@ -578,8 +541,8 @@
 	
 	\clearpage
 	\section{Cl}
-	\paragraph{氯相关}
-	\subparagraph{含氯酸}
+	\subsection*{氯相关}
+	\subsubsection{含氯酸}
 	从上至下，酸性递增，氧化性递减。
 	\begin{itemize}
 		\item \ce{HClO}：次氯酸
@@ -587,9 +550,33 @@
 		\item \ce{HClO3}：氯酸
 		\item \ce{HClO4}：高氯酸
 	\end{itemize}
-	\subparagraph{卤素}
-	\ce{F}、\ce{Cl}、\ce{Br}、\ce{I}
-	\subparagraph{拟卤素}
+	\subsubsection{卤素}
+	\begin{itemize}
+		\item \ce{F}：无正价，氧化性最强的单质
+		\item \ce{Cl}：黄绿色气体
+		\item \ce{Br}：常温下唯一液态非金属单质，保存液溴需水封，海水元素
+		\item \ce{I}：易升华
+	\end{itemize}
+	\begin{itemize}
+		\item \ce{AgF}：可溶于水
+		\item \ce{AgCl}：白色沉淀
+		\item \ce{AgBr}：淡黄色沉淀
+		\item \ce{AgI}：黄色沉淀，用于人工降雨
+	\end{itemize}
+	\paragraph{海水提溴}
+	$$
+	\ce{{海水} ->[{晒盐}] {盐卤} ->[{通入}Cl2] Br2(aq) ->[{吹热空气或水蒸气}] Br2(g) ->[{热饱和纯碱}] {溴酸盐和溴盐溶液} ->[{稀硫酸酸化}] {Br2}}
+	$$
+	$\left\{\begin{array}{lr}
+		\ce{Cl2 + 2Br- -> Br2 + 2Cl-}\\
+		\ce{3Br2 + 3CO3^2- -> 5Br- + BrO3- + 3CO2}\\
+		\ce{5Br- + BrO3- + 6H+ -> 3Br2 + 3H2O}\\
+	\end{array}\right.$
+	\paragraph{海带提碘}
+	$$
+	\ce{{海带} -> {烧碱灰} ->[{泡水浸取}] ->[Cl2] I2}
+	$$
+	\paragraph{拟卤素}
 	$\underset{\text{氰}}{\ce{CN}}$、$\underset{\text{硫氰}}{\ce{SCN}}$、$\underset{\text{氧氰}}{\ce{OCN}}$
 	
 	\subsection{盐酸}
@@ -1058,8 +1045,7 @@
 		\item 加压易液化（制冷剂）
 	\end{itemize}
 	\subsubsection{尾气处理防倒吸}
-	\ce{NH3}或\ce{HCl}等气体极易溶于水，直接通入水中会使水倒吸。\\
-	在水层下放\ce{CCl4}层并将气体通入，可以防止倒吸。（\ce{NH3}和\ce{HCl}不溶于\ce{CCl4}）
+	\ce{NH3}或\ce{HCl}等气体极易溶于水，直接通入水中会使水倒吸。在水层下放\ce{CCl4}层并将气体通入，可以防止倒吸。（\ce{NH3}和\ce{HCl}不溶于\ce{CCl4}）
 	\subsubsection{喷泉实验}
 	\begin{center}
 	\begin{tabular}{|c|c|}

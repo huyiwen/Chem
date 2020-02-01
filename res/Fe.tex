@@ -1,0 +1,26 @@
+\documentclass[a6paper]{minimal}
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+\usepackage{tikz}
+\usepackage{fontspec}
+\usepackage[landscape]{geometry}
+\setmainfont{Hiragino Sans GB}
+\usetikzlibrary{positioning}
+
+\begin{document}
+	\begin{center}
+	\begin{tikzpicture}[node distance=40pt, auto, thick]
+		\node[draw] (Fe) {\ce{Fe}};
+		\node[below=104pt of Fe] (TEMP) {};
+		\node[draw, right=60pt of TEMP] (Fe3+) {\ce{Fe^3+}};
+		\node[draw, left=60pt of TEMP] (Fe2+) {\ce{Fe^2+}};
+		
+		\draw[-Latex] (Fe) (Fe3+) edge node {\ce{Cl2}} (Fe);
+		\draw[-Latex] (Fe3+) [bend left] (Fe) edge node {\ce{Zn}} (Fe3+);
+		\draw[-Latex] (Fe3+) (Fe2+) edge node {\ce{Fe}或\ce{Cu}} (Fe3+);
+		\draw[-Latex] (Fe2+) [bend left] (Fe3+) edge node {\ce{HNO3}或\ce{Cl2}} (Fe2+);
+		\draw[-Latex] (Fe2+) (Fe) edge node {\ce{Zn}} (Fe2+);
+		\draw[-Latex] (Fe) [bend left] (Fe2+) edge node {\ce{Fe^3+}或\ce{H+}} (Fe);
+	\end{tikzpicture}
+	\end{center}
+\end{document}

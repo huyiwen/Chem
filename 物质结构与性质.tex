@@ -1,0 +1,289 @@
+\documentclass[a4paper]{article}
+\usepackage{fontspec}
+\usepackage{fontenc}
+\usepackage{extarrows}
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+\usepackage{mwe}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{varwidth}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{bigfoot}
+\usepackage{fancyvrb}
+\usepackage{expl3}
+\usepackage{calc}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2cm,bottom=3cm}
+\setmainfont{Hiragino Sans GB}
+
+\title{物质结构与性质}
+\author{胡译文}
+\date{\today}
+
+\makeatletter
+\newcommand{\figcaption}{\def@captype{figure}\caption}
+\newcommand{\tabcaption}{\def@captype{table}\caption}
+\makeatother
+
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+\usepackage{hyperref}
+\renewcommand\contentsname{目录}
+
+\begin{document}
+	\maketitle
+	\begin{center}
+		若有bug请到{\color{red}\href{https://github.com/huyiwen/Chem}{github}}上提Issue。\\
+		技术有限所有方程式的等号都用箭头代替了。
+	\end{center}
+	\renewcommand\contentsname{目录}
+	\tableofcontents
+	
+	
+	\clearpage
+	\section{原子结构}
+	
+	
+	\subsection{发现史}
+	\begin{itemize}
+		\item 道尔顿：原子说
+		\item JJ-汤姆逊：电子
+		\item 卢瑟福：核式结构
+		\item 玻尔：行星模型
+		\item 量子科学家：电子云模型（电子出现的概率统计）
+	\end{itemize}
+	
+	
+	\subsection{能层和能级}
+	\paragraph{能层}
+	能层又叫电子层，在含有多个电子的原子内，电子分别在能量不同的区域内运动，这种不同的区域就是能层。由于原子中的电子是处在原子核的引力场中，电子总是尽可能先从内层排起，当一层充满后再填充下一层。
+	\paragraph{能级}
+	能级又叫电子亚层，同一个能层的电子，能量也可能不同，又可以把他们分成不同能级。
+	
+	\subsection{四个量子数}	
+	\subsubsection{主量子数}
+	主量子数$n$，由周期数决定
+	\renewcommand\arraystretch{2}
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		$n$ & $1$ & $2$ & $3$ & $4$ & $5$\\\hline
+		能层 & $K$ & $L$ & $M$ & $N$ & $O$\\\hline
+	\end{tabular}
+	\end{center}
+	\subsubsection{角量子数}
+	角量子数$l$，由能级决定
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		$l$ & $0$ & $1$ & $2$ & $3$ & $4$ & $5$\\\hline
+		能级 & $s$ & $p$ & $d$ & $f$ & $g$ & $h$\\\hline
+	\end{tabular}
+	\end{center}
+	\paragraph{各个能层含有的能级}
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		能层 & $K$ & \multicolumn{2}{c|}{$L$} & \multicolumn{3}{c|}{$M$} & \multicolumn{4}{c|}{$N$}\\\hline
+		$n$ & $1$ & \multicolumn{2}{c|}{$2$} & \multicolumn{3}{c|}{$3$} & \multicolumn{4}{c|}{$4$}\\\hline
+		$l$ & $0$ & $0$ & $1$ & $0$ & $1$ & $2$ & $0$ & $1$ & $2$ & $3$\\\hline
+		能级 & $1s$ & $2s$ & $2p$ & $3s$ & $3p$ & $3d$ & $4s$ & $4p$ & $4d$ & $4f$\\\hline
+	\end{tabular}
+	\end{center}
+	\subsubsection{磁量子数}
+	磁量子数$m$，决定轨道数
+	$$m=0,\pm1,\pm2,...,\pm l$$
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|}
+		\hline
+		能层 & $K$ & \multicolumn{2}{c|}{$L$} & \multicolumn{3}{c|}{$M$}\\\hline
+		$n$ & $1$ & \multicolumn{2}{c|}{$2$} & \multicolumn{3}{c|}{$3$}\\\hline
+		$l$ & $0$ & $0$ & $1$ & $0$ & $1$ & $2$\\\hline
+		$m$ & $0$ & $0$ & $0/+1/-1$ & $0$ & $0/+1/-1$ & $0/+1/-1/+2/-2$\\\hline
+		轨道数 & 1 & 1 & 3 & 1 & 3 & 5\\\hline
+		轨道表达式 & \fbox{$\ \ $} & \fbox{$\ \ $} & \fbox{$\ \ $}\fbox{$\ \ $}\fbox{$\ \ $} & \fbox{$\ \ $} & \fbox{$\ \ $}\fbox{$\ \ $}\fbox{$\ \ $} & \fbox{$\ \ $}\fbox{$\ \ $}\fbox{$\ \ $}\fbox{$\ \ $}\fbox{$\ \ $}\\\hline
+	\end{tabular}
+	\end{center}
+	\subsubsection{自旋量子数}
+	自旋量子数$m_s$，决定电子运动方向（共两种情况，在轨道表达式中分别为上、下箭头）
+	$$m_s=\pm\frac12$$
+	
+	
+	\subsection{电子、价电子排布式和轨道表达式}
+	\paragraph{价电子}
+	价电子指原子核外电子中能与其他原子相互作用形成化学键的电子，为原子核外跟元素化合价有关的电子
+	\paragraph{轨道表达式}
+	又叫电子排布图
+	\paragraph{$\ce{_{26}Fe}$}
+	\begin{itemize}
+		\item 电子排布式：$1s^2\,2s^2\,2p^6\,3s^2\,3p^6\,3d^6\,4s^2$
+		\item 价电子排布式：$3d^6\,4s^2$
+		\item 电子轨道表达式：\fbox{$\uparrow\downarrow$}\quad\fbox{$\uparrow\downarrow$}\quad\fbox{$\uparrow\downarrow$}\fbox{$\uparrow\downarrow$}\fbox{$\uparrow\downarrow$}\quad\fbox{$\uparrow\downarrow$}\quad\fbox{$\uparrow\downarrow$}\fbox{$\uparrow\downarrow$}\fbox{$\uparrow\downarrow$}\quad\fbox{$\uparrow\downarrow$}\fbox{$\uparrow\ $}\fbox{$\uparrow\ $}\fbox{$\uparrow\ $}\fbox{$\uparrow\ $}\quad\fbox{$\uparrow\downarrow$}
+		\item 价电子轨道表达式：\fbox{$\uparrow\downarrow$}\fbox{$\uparrow\ $}\fbox{$\uparrow\ $}\fbox{$\uparrow\ $}\fbox{$\uparrow\ $}\quad\fbox{$\uparrow\downarrow$}
+	\end{itemize}
+	
+	
+
+	\subsection{徐光宪规则}
+	根据实验总结出的计算能级高低的近似规则
+	$$E=n+0.7l$$
+	\begin{itemize}
+		\item $E(4s)=4+0.7\times 0=4$
+		\item $E(3d)=3+0.7\times 2=4.4$
+	\end{itemize}
+
+
+	\subsection{电子排布原理}
+	\subsubsection{能量最低原理}
+	电子尽量填充至能量低的轨道中
+	\begin{itemize}
+		\item 注意：同一能级中的轨道（如$3p$中的 \fbox{$\ \ $}\fbox{$\ \ $}\fbox{$\ \ $} ）能量相等
+	\end{itemize}
+	\subsubsection{泡利不相容原理}
+	一个轨道中不能存在自旋相同的电子（轨道表达式中同轨道箭头方向不同）
+	\begin{itemize}
+		\item \fbox{$\uparrow\ $}：正确
+		\item \fbox{$\ \downarrow$}：正确
+		\item \fbox{$\uparrow\downarrow$}：正确
+		\item \fbox{$\uparrow\uparrow$}：错误
+	\end{itemize}
+	\subsubsection{洪特规则}
+	电子总是先填充空轨道
+	\begin{enumerate}
+		\item \fbox{$\uparrow\ $}\fbox{$\ \ $}\fbox{$\ \ $}\footnote{这些方格应该是一样大的，但是技术有限就只能这样}
+		\item \fbox{$\uparrow\ $}\fbox{$\uparrow\ $}\fbox{$\ \ $}
+		\item \fbox{$\uparrow\ $}\fbox{$\uparrow\ $}\fbox{$\uparrow\ $}
+		\item \fbox{$\uparrow\downarrow$}\fbox{$\uparrow\ $}\fbox{$\uparrow\ $}
+		\item \fbox{$\uparrow\downarrow$}\fbox{$\uparrow\downarrow$}\fbox{$\uparrow\ $}
+		\item \fbox{$\uparrow\downarrow$}\fbox{$\uparrow\downarrow$}\fbox{$\uparrow\downarrow$}
+	\end{enumerate}
+	\subsubsection{构造原理}
+	根据构造原理，绝大多数基态原子核外电子的排布都遵循下列顺序：\\
+	$1s$、$2s$、$2p$、$3s$、$3p$、$4s$、$3d$、$4p$、$5s$、$4d$、$5p$、$6s$、$4f$、$5d$......\\
+	这些顺序可以通过徐光宪规则计算得。
+	
+	\subsection{电子跃迁}
+	组成物质的粒子（原子、离子或分子）中电子的一种能量变化（比如激发态变为基态、基态变为激发态、不同激发态之间转变）。
+	\subsubsection{原子光谱}
+	原子光谱，是由原子中的电子在能量变化时所发射或吸收的一系列波长的光所组成的光谱。
+	\begin{itemize}
+		\item \ce{Na}：$1s^2\,2s^2\,2p^6\,3s^1$ 基态
+		\item \ce{Na}：$1s^2\,2s^2\,2p^5\,3s^2$ 激发态
+	\end{itemize}
+	\paragraph{原子发射光谱}
+	原子发射光谱法，是根据每种化学元素的原子或离子在热激发或电激发下，从激发态回到基态时发射的特征谱
+	\paragraph{原子吸收光谱}
+	原子吸收光谱包括火焰原子化吸收光谱，石墨炉原子化吸收光谱，氢化物发生原子吸收光谱等。
+	
+	
+	\clearpage
+	\section{元素的性质}
+	
+	
+	\subsection{元素周期表}
+	
+	
+	\subsection{电负性}
+	
+	
+	\subsection{电子亲和能}
+	
+	
+	\subsection{电离能}
+	
+	
+	\subsection{对角线规则}
+	
+	
+	\clearpage
+	\section{化学键}
+	
+	
+	\subsection{分类}
+	
+	
+	\subsection{共价键的形成}
+	
+	
+	\subsection{键参数}
+	
+	
+	\subsection{配合物}
+	
+	
+	\clearpage
+	\section{分子结构}
+	
+	
+	\subsection{Lewis结构式}
+	
+	
+	\subsection{中心原子轨道杂化理论}
+	
+	
+	\subsection{VSPER构型}
+	
+	
+	\subsection{立体构型}
+	
+	
+	\clearpage
+	\section{分子的性质}
+	
+	
+	\subsection{分子极性}
+	
+		
+	\subsection{分子手性}
+	
+	
+	\subsection{氢键}
+		
+	
+	\clearpage
+	\section{晶体结构}
+	
+	
+	\subsection{晶体}
+	
+	\subsubsection{定义}
+	
+	\subsubsection{鉴别}
+	
+	\subsubsection{获取}
+	
+	
+	\subsection{原子晶体}
+	
+	\subsection{分子晶体}
+	
+	\subsection{离子晶体}
+	
+	\subsubsection{晶格能}
+	
+	\subsubsection{金属晶体}
+	
+	
+	\clearpage
+	\section{晶体的性质以及计算}
+	
+	
+	\subsection{熔沸点比较}
+	
+	\subsubsection{不同类型晶体}
+	
+	\subsubsection{相同类型晶体}
+	
+	
+	\subsection{晶体计算}
+	
+	\subsubsection{晶胞的组成}
+	
+	\subsubsection{晶体微粒个数}
+	
+\end{document}
