@@ -1,0 +1,131 @@
+\contentsline {section}{\numberline {1}基本仪器}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}容器}{5}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}量器}{5}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}温度计}{5}{subsubsection.1.2.1}%
+\contentsline {paragraph}{测反应混合物的温度}{5}{section*.2}%
+\contentsline {paragraph}{测蒸气的温度}{5}{section*.3}%
+\contentsline {paragraph}{测水浴温度}{5}{section*.4}%
+\contentsline {subsubsection}{\numberline {1.2.2}容量瓶}{6}{subsubsection.1.2.2}%
+\contentsline {paragraph}{使用方法}{6}{section*.5}%
+\contentsline {paragraph}{注意事项}{6}{section*.6}%
+\contentsline {subsubsection}{\numberline {1.2.3}滴定管}{6}{subsubsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.3}分离仪器}{6}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}干燥管}{7}{subsubsection.1.3.1}%
+\contentsline {paragraph}{种类}{7}{section*.7}%
+\contentsline {paragraph}{常见干燥剂}{7}{section*.8}%
+\contentsline {subsection}{\numberline {1.4}其他}{7}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}冷凝管}{7}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}启普发生器}{7}{subsubsection.1.4.2}%
+\contentsline {paragraph}{构造}{7}{section*.9}%
+\contentsline {paragraph}{工作原理}{7}{section*.10}%
+\contentsline {paragraph}{使用条件}{8}{section*.11}%
+\contentsline {paragraph}{气密性检验}{8}{section*.12}%
+\contentsline {paragraph}{常见反应}{8}{section*.13}%
+\contentsline {subsection}{\numberline {1.5}总结}{8}{subsection.1.5}%
+\contentsline {subsubsection}{\numberline {1.5.1}特殊仪器}{8}{subsubsection.1.5.1}%
+\contentsline {paragraph}{需要验漏的仪器}{8}{section*.14}%
+\contentsline {paragraph}{需要标注规格的仪器}{8}{section*.15}%
+\contentsline {paragraph}{玻璃仪器}{8}{section*.16}%
+\contentsline {section}{\numberline {2}化学实验安全与试剂保存}{9}{section.2}%
+\contentsline {subsection}{\numberline {2.1}试剂保存}{9}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}试剂瓶的选择}{9}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}危险标志}{9}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}一些试剂保存方式}{9}{subsubsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.2}事故处理}{10}{subsection.2.2}%
+\contentsline {section}{\numberline {3}基本操作}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}仪器的洗涤}{11}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}洗涤试剂的选择}{11}{subsubsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.2}装置气密性检查}{11}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}常见方法}{11}{subsubsection.3.2.1}%
+\contentsline {paragraph}{微热法}{12}{section*.17}%
+\contentsline {paragraph}{液差法}{12}{section*.18}%
+\contentsline {paragraph}{滴液法}{12}{section*.19}%
+\contentsline {paragraph}{抽气法}{12}{section*.20}%
+\contentsline {paragraph}{吹气法}{12}{section*.21}%
+\contentsline {subsection}{\numberline {3.3}试纸的使用}{12}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}常见类型}{12}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}使用方法}{12}{subsubsection.3.3.2}%
+\contentsline {paragraph}{检验溶液}{13}{section*.22}%
+\contentsline {paragraph}{检验气体}{13}{section*.23}%
+\contentsline {paragraph}{pH试纸测定溶液pH值}{13}{section*.24}%
+\contentsline {subparagraph}{注意事项}{13}{section*.25}%
+\contentsline {subsection}{\numberline {3.4}药品的取用}{13}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}取用固体药品}{13}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}取用液体药品}{13}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}取用气体}{14}{subsubsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.5}配置溶液}{14}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}固体物质的溶解}{14}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}液体物质的溶解}{14}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}气体的溶解}{14}{subsubsection.3.5.3}%
+\contentsline {paragraph}{常见气体的溶解度（$V_{\text {气体}}:V_{\text {液体}}$）}{14}{section*.26}%
+\contentsline {paragraph}{装置选择}{14}{section*.27}%
+\contentsline {subsection}{\numberline {3.6}物质加热}{15}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}固体的加热}{15}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}液体的加热}{15}{subsubsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.7}测定}{15}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}酸碱中和或氧化还原滴定}{15}{subsubsection.3.7.1}%
+\contentsline {paragraph}{酸碱中和滴定指示剂变色pH值}{15}{section*.28}%
+\contentsline {paragraph}{操作流程}{16}{section*.29}%
+\contentsline {paragraph}{氧化还原滴定指示剂}{16}{section*.30}%
+\contentsline {subsubsection}{\numberline {3.7.2}中和反应反应热测定}{16}{subsubsection.3.7.2}%
+\contentsline {section}{\numberline {4}实验}{17}{section.4}%
+\contentsline {subsection}{\numberline {4.1}实验室气体制备}{17}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}常见气体的发生装置}{17}{subsubsection.4.1.1}%
+\contentsline {paragraph}{固固加热型}{17}{section*.31}%
+\contentsline {subparagraph}{操作注意事项}{17}{section*.32}%
+\contentsline {paragraph}{固液不加热和液液不加热型}{17}{section*.33}%
+\contentsline {paragraph}{启普发生器}{17}{section*.34}%
+\contentsline {paragraph}{固液加热和液液加热型}{17}{section*.35}%
+\contentsline {subparagraph}{操作注意事项}{17}{section*.36}%
+\contentsline {subsubsection}{\numberline {4.1.2}常见气体的制备}{17}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}常见气体的除杂装置}{19}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.2}装置选取}{19}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}实验现象}{19}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}收集}{19}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}性质探究与验证}{19}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}事故预防}{19}{subsection.4.6}%
+\contentsline {section}{\numberline {5}物质的检验}{21}{section.5}%
+\contentsline {subsection}{\numberline {5.1}离子检验}{21}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}焰色反应}{22}{subsubsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.2}气体检验}{22}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}官能团检验}{22}{subsection.5.3}%
+\contentsline {section}{\numberline {6}物质分离提纯}{24}{section.6}%
+\contentsline {subsection}{\numberline {6.1}物理法}{24}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}过滤}{24}{subsubsection.6.1.1}%
+\contentsline {paragraph}{普通过滤（常压过滤）}{24}{section*.37}%
+\contentsline {paragraph}{热过滤}{24}{section*.38}%
+\contentsline {paragraph}{抽滤（减压过滤）}{24}{section*.39}%
+\contentsline {subsubsection}{\numberline {6.1.2}}{24}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}结晶}{24}{subsubsection.6.1.3}%
+\contentsline {paragraph}{蒸发结晶}{24}{section*.40}%
+\contentsline {subparagraph}{操作注意事项}{25}{section*.41}%
+\contentsline {subparagraph}{使用范围}{25}{section*.42}%
+\contentsline {paragraph}{冷却结晶}{25}{section*.43}%
+\contentsline {subparagraph}{使用范围}{25}{section*.44}%
+\contentsline {paragraph}{重结晶}{25}{section*.45}%
+\contentsline {subsubsection}{\numberline {6.1.4}蒸馏}{25}{subsubsection.6.1.4}%
+\contentsline {paragraph}{实验用品}{25}{section*.46}%
+\contentsline {paragraph}{操作注意事项}{26}{section*.47}%
+\contentsline {subsubsection}{\numberline {6.1.5}萃取分液}{26}{subsubsection.6.1.5}%
+\contentsline {paragraph}{萃取条件}{26}{section*.48}%
+\contentsline {paragraph}{萃取分液的操作步骤}{26}{section*.49}%
+\contentsline {paragraph}{注意事项}{26}{section*.50}%
+\contentsline {subsubsection}{\numberline {6.1.6}升华}{26}{subsubsection.6.1.6}%
+\contentsline {subsubsection}{\numberline {6.1.7}渗析}{26}{subsubsection.6.1.7}%
+\contentsline {subsection}{\numberline {6.2}化学法}{27}{subsection.6.2}%
+\contentsline {paragraph}{四原则}{27}{section*.51}%
+\contentsline {paragraph}{四必须}{27}{section*.52}%
+\contentsline {subsubsection}{\numberline {6.2.1}常见混合物气体除杂}{27}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}常见混合物固体除杂}{27}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}常见混合物溶液除杂}{28}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}沉淀法}{28}{subsubsection.6.2.4}%
+\contentsline {paragraph}{ \ce {Al2O3}和 \ce {MgO}固体}{28}{section*.53}%
+\contentsline {paragraph}{ \ce {Fe2O3}和 \ce {SiO2}固体}{28}{section*.54}%
+\contentsline {paragraph}{ \ce {AlCl3}和 \ce {FeCl3}的混合溶液}{29}{section*.55}%
+\contentsline {subsubsection}{\numberline {6.2.5}气化法}{29}{subsubsection.6.2.5}%
+\contentsline {subsubsection}{\numberline {6.2.6}杂质转换法}{29}{subsubsection.6.2.6}%
+\contentsline {subsubsection}{\numberline {6.2.7}酸碱溶解法}{29}{subsubsection.6.2.7}%
+\contentsline {subsubsection}{\numberline {6.2.8}氧化还原法}{29}{subsubsection.6.2.8}%
+\contentsline {subsubsection}{\numberline {6.2.9}加热分解法}{29}{subsubsection.6.2.9}%
+\contentsline {subsubsection}{\numberline {6.2.10}调节pH法}{29}{subsubsection.6.2.10}%
+\contentsline {subsubsection}{\numberline {6.2.11}电解法}{29}{subsubsection.6.2.11}%

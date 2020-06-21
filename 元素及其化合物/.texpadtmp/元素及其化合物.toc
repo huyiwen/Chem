@@ -1,0 +1,39 @@
+\contentsline {section}{\numberline {1}镁和铝}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}铝单质}{2}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}物理性质}{2}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}化学性质}{2}{subsubsection.1.1.2}%
+\contentsline {paragraph}{与非金属单质反应}{2}{section*.2}%
+\contentsline {paragraph}{与热水反应}{2}{section*.3}%
+\contentsline {paragraph}{铝（镁）热反应}{2}{section*.4}%
+\contentsline {paragraph}{两性}{3}{section*.5}%
+\contentsline {subsubsection}{\numberline {1.1.3}制备}{3}{subsubsection.1.1.3}%
+\contentsline {paragraph}{工业制铝}{3}{section*.6}%
+\contentsline {paragraph}{工业制镁}{3}{section*.7}%
+\contentsline {paragraph}{海水提镁}{3}{section*.8}%
+\contentsline {subsection}{\numberline {1.2}氧化铝}{4}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}物理性质}{4}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}化学性质}{4}{subsubsection.1.2.2}%
+\contentsline {paragraph}{两性}{4}{section*.9}%
+\contentsline {subsection}{\numberline {1.3}氢氧化铝}{4}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}化学性质}{4}{subsubsection.1.3.1}%
+\contentsline {paragraph}{两性}{4}{section*.10}%
+\contentsline {subparagraph}{与强碱反应}{4}{section*.11}%
+\contentsline {subparagraph}{与强碱反应}{4}{section*.12}%
+\contentsline {subparagraph}{ \ce {Al(OH)3}的电离}{5}{section*.13}%
+\contentsline {paragraph}{受热分解}{5}{section*.14}%
+\contentsline {subsection}{\numberline {1.4}铝离子}{5}{subsection.1.4}%
+\contentsline {paragraph}{与 \ce {NaOH}的相互滴加}{5}{section*.15}%
+\contentsline {subparagraph}{将 \ce {NaOH}滴入 \ce {Al^3+}溶液中}{5}{section*.16}%
+\contentsline {subparagraph}{将 \ce {Al^3+}滴入 \ce {NaOH}溶液中}{5}{section*.17}%
+\contentsline {paragraph}{与氨水反应}{5}{section*.18}%
+\contentsline {paragraph}{双水解反应}{5}{section*.19}%
+\contentsline {subsection}{\numberline {1.5}偏铝酸根}{6}{subsection.1.5}%
+\contentsline {paragraph}{与强酸相互滴加}{6}{section*.20}%
+\contentsline {subparagraph}{将 \ce {H2SO4}滴入 \ce {AlO2-}溶液中}{6}{section*.21}%
+\contentsline {subparagraph}{将 \ce {AlO2-}滴入 \ce {H2SO4}溶液中}{6}{section*.22}%
+\contentsline {paragraph}{与碳酸反应}{6}{section*.23}%
+\contentsline {paragraph}{与铵盐溶液反应}{6}{section*.24}%
+\contentsline {subsection}{\numberline {1.6}氢氧化铝}{6}{subsection.1.6}%
+\contentsline {subsubsection}{\numberline {1.6.1}物理性质}{6}{subsubsection.1.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.2}制备}{7}{subsubsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.7}总结}{7}{subsection.1.7}%

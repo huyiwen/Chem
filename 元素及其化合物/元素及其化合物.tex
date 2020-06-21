@@ -1,0 +1,71 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 源文件排版规范：
+% chapter分文件放置于子目录下，需要clearpage
+% section前空三行
+% subsection前空两行
+% subsubsection及以下级别前空一行
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt]{article}
+\usepackage{xeCJK}                      % xeCJK
+\usepackage{fontspec}                   % 字体选择
+\usepackage{fontenc}                    % 字体选择
+\usepackage{cite}                       % 引用
+\usepackage{natbib}                     % Bibtex引用
+\usepackage{indentfirst}                % 首行缩进
+\usepackage{hyperref}                   % 目录链接
+\usepackage{geometry}                   % 页面调整
+\usepackage{chemfig}                    % 化学
+\usepackage[version=4]{mhchem}          % 化学
+%\usepackage{amsmath}                   % 数学
+%\usepackage{amssymb}                   % 数学
+%\usepackage{calc}                      % 数学
+\usepackage{siunitx}                    % 数学
+\usepackage{supertabular}               % 超级表格
+\usepackage{multirow}                   % 合并单元格
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\geometry{                              % 页面调整B5活页纸
+	dvipdfm,
+	left=2.1cm,
+	right=2.1cm,
+	top=1cm,
+	bottom=1.5cm,
+	body={14cm,20cm},
+	papersize={18.2cm,22.5cm}
+}
+\hypersetup{                            % 链接颜色调整
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\setCJKmainfont{Hiragino Sans GB}       % 中文字体
+\setmainfont{Times New Roman}           % 西文字体
+\XeTeXlinebreaklocale "zh"              % 中文自动换行
+\XeTeXlinebreakskip = 0pt plus 1pt
+\setlength{\parindent}{2em}             % 首行缩进
+\linespread{1.2}                        % 行间距
+\setlength{\parskip}{0.5\baselineskip}  % 段间距
+\renewcommand\arraystretch{1.5}         % 表格高度调整
+\setcounter{tocdepth}{3}                % 目录深度（打印设为1）
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand\contentsname{目录}
+\renewcommand\bibname{参考文献}
+\title{元素及其化合物}
+\author{胡译文}
+\date{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+	\maketitle
+	\tableofcontents
+	%\include{section/s1}
+	%\include{section/s2}
+	\include{section/s3}
+	%\include{section/s4}
+	%\include{section/s5}
+	%\include{section/s6}
+	%\include{section/s7}
+	%\include{section/s8}
+
+\end{document}
